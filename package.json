@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/joshuadavidson/img-search-project#readme",
   "dependencies": {
-    "body-parser": "^1.15.2",
     "compression": "^1.6.2",
     "ejs": "^2.5.1",
     "express": "^4.14.0",
