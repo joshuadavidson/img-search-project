@@ -1,5 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
 const compression = require('compression');
 
 //application route modules
