@@ -1,7 +1,7 @@
 {
   "name": "img-search-project",
   "version": "1.0.0",
-  "description": "Free code camp url shortener microservice project.",
+  "description": "Free code camp image abstraction layer project.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
