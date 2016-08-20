@@ -32,8 +32,7 @@
 
     <h3><i class="fa fa-info"></i> Description</h3>
     <p>
-      A simple image search abstraction layer API that takes a search string and returns a set of image data including name, image url, and page url. The API can take an offset and limit parameter to pageinate and limit results. A history log can also be called
-      to list the last 10 searches performed. data for a single search.
+      A simple image search abstraction layer API that takes a search string and returns a set of image data including name, image url, and page url. The API can take an offset and limit parameter to paginate and limit results. A history log can also be called to list the previous searches. The history log can take a limit parameter to limit results.
     </p>
 
     <p>
@@ -41,15 +40,30 @@
       <br> Visit <a href="https://img-search-project.herokuapp.com/history">https://img-search-project.herokuapp.com/history</a> to view the 10 most recent searches.
     </p>
 
-    <h3><i class="fa fa-terminal"></i> Example Usage</h3>
+    <h3><i class="fa fa-terminal"></i> Example Image Search Usage</h3>
     <code>https://img-search-project.herokuapp.com/imagesearch/freecodecamp?limit=1&offset=0</code>
 
-    <h3><i class="fa fa-code"></i> Example Output</h3>
+    <h3><i class="fa fa-code"></i> Example Image Search Output</h3>
     <code>[
       {
       name: "Free Code Camp 3rd Meetup! - Free Code Camp Austin (Austin, TX ...",
       url: "http://photos3.meetupstatic.com/photos/event/c/8/6/e/highres_443871310.jpeg",
       pageURL: "www.meetup.com/Free-Code-Camp-Austin/events/227106186"
+      }
+    ]</code>
+
+    <h3><i class="fa fa-terminal"></i> Example History Usage</h3>
+    <code>https://img-search-project.herokuapp.com/history?limit=2</code>
+
+    <h3><i class="fa fa-code"></i> Example History Output</h3>
+    <code>[
+      {
+      timestamp: "2016-08-20T01:37:44.762Z",
+      query: "free code camp"
+      },
+      {
+      timestamp: "2016-08-20T01:37:40.054Z",
+      query: "freecodecamp"
       }
     ]</code>
 
