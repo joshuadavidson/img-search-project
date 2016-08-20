@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <title>Image Search Abstraction Layer API</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- OG properties -->
+  <meta property="fb:app_id" content="" />
+  <meta property="og:url" content="https://img-search-project.herokuapp.com/" />
+  <meta property="og:title" content="Image Search Abstraction Layer API" />
+  <meta property="og:description" content="A simple url shortener microservice API that returns a shortened URL within a JSON or redirects if passed a shortened URL." />
+  <meta property="og:image" content="" />
+
+  <!-- Links -->
+  <link rel="shortcut icon" href="https://jwaynedavidson.com/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://jwaynedavidson.com/scripts/gatracking.js"></script>
+</head>
+
+<body>
+
+  <div>
+    <h1><i class="fa fa-cogs"></i> Image Search Abstraction Layer API</h1>
+
+    <h3><i class="fa fa-user"></i> Coded by <a href="https://jwaynedavidson.com">Joshua Davidson</a></h3>
+
+    <h3><i class="fa fa-info"></i> Description</h3>
+    <p>
+      A simple image search abstraction layer API that takes a search string and returns a set of image data including name, image url, and page url. The API can take an offset and limit parameter to pageinate and limit results. A history log can also be called
+      to list the last 10 searches performed. data for a single search.
+    </p>
+
+    <p>
+      Append your query to https://img-search-project.herokuapp.com/imagesearch/ to give it a try!
+      <br> Visit <a href="https://img-search-project.herokuapp.com/history">https://img-search-project.herokuapp.com/history</a> to view the 10 most recent searches.
+    </p>
+
+    <h3><i class="fa fa-terminal"></i> Example Usage</h3>
+    <code>https://img-search-project.herokuapp.com/imagesearch/freecodecamp?limit=1&offset=0</code>
+
+    <h3><i class="fa fa-code"></i> Example Output</h3>
+    <code>[
+      {
+      name: "Free Code Camp 3rd Meetup! - Free Code Camp Austin (Austin, TX ...",
+      url: "http://photos3.meetupstatic.com/photos/event/c/8/6/e/highres_443871310.jpeg",
+      pageURL: "www.meetup.com/Free-Code-Camp-Austin/events/227106186"
+      }
+    ]</code>
+
+  </div>
+
+</body>
+
+</html>
